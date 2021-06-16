@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.LocationEntryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/edt_latitude"
+            android:text="@string/latitude" />
+
+        <EditText
+            android:id="@+id/edt_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Latitude"
+            android:background="@drawable/outer_semi_round"
+            android:enabled="false"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/edt_longitude"
+            android:text="@string/longitude" />
+
+        <EditText
+            android:id="@+id/edt_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Longitude"
+            android:background="@drawable/outer_semi_round"
+            android:enabled="false"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/edt_altitude"
+            android:text="@string/altitude" />
+
+        <EditText
+            android:id="@+id/edt_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Altitude"
+            android:background="@drawable/outer_semi_round"
+            android:enabled="false"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/edt_address"
+            android:text="@string/address" />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="Address"
+            android:background="@drawable/outer_semi_round"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="@string/save"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</ScrollView>
